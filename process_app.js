@@ -48,9 +48,9 @@ http.createServer(async function (req, res) {
                 res.write('<h2>Search Results:</h2><ul>');
                 results.forEach(doc => {
                     res.write(`<li>${doc.companyName} (${doc.ticker}) - $${doc.price}</li>`);
+                    console.log(`${doc.companyName} (${doc.ticker}) - $${doc.price}`);
                 });
                 res.write('</ul>');
-                console.log('${doc.companyName} (${doc.ticker}) - $${doc.price}');
             } else {
                 res.write('No results found.');
             }
