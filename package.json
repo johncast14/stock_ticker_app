@@ -15,5 +15,8 @@
   "bugs": {
   "url": ""
 },
-  "homepage": ""
+  "homepage": "",
+  "dependencies": {
+     "mongodb": "^6.1.0"
+   }
 }
