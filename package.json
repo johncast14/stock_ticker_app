@@ -1,0 +1,19 @@
+{
+  "name": "stock_ticker_app",
+  "version": "1.0.0",
+  "description": "Stock Ticker app ",
+  "main": "process_app.js",
+  "scripts": {
+  "start": "node process_app.js"
+},
+  "repository": {
+  "type": "git",
+  "url": ""
+},
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+  "url": ""
+},
+  "homepage": ""
+}
