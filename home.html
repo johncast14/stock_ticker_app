@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home page - Stock Ticker App</title>
+</head>
+<body>
+
+  <h2>Stock Search</h2>
+
+  <form action="/process" method="GET">
+    <label for="query">Enter a stock ticker OR company name:</label><br>
+    <input type="text" id="query" name="query" required><br><br>
+
+    <input type="radio" id="ticker" name="searchType" value="ticker" checked>
+    <label for="ticker">Search by Ticker Symbol</label><br>
+
+    <input type="radio" id="company" name="searchType" value="company">
+    <label for="company">Search by Company Name</label><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
