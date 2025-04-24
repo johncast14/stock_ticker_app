@@ -6,12 +6,7 @@ const { MongoClient } = require('mongodb');
 
 const connStr = 'mongodb+srv://johncastillotacuri:eJSSmYxNmck26N4K@cluster0.v6aozsk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
-const client = new MongoClient(connStr, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  tls: true,
-  tlsAllowInvalidCertificates: false
-});
+const client = new MongoClient(connStr);
 
 http.createServer(async function (req, res) {
     const parsedUrl = url.parse(req.url, true);
